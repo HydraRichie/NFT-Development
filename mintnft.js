@@ -12,7 +12,7 @@ const contract=require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
 //display contracts abi
 console.log(JSON.stringify(contract.abi));
 //conatract address
-const contractaddress="0xbc148d42bAeCD876575a363a73eA913614d1B0b4";
+const contractaddress="Contract Address";
 //nft contract instance getting
 const nftcontract=new web3.eth.Contract(contract.abi,contractaddress);
 
@@ -57,5 +57,5 @@ signPromise
     console.log(" Promise failed:", err);
   });
 }
-mintNFT("https://gateway.pinata.cloud/ipfs/Qmb5iEeXS8mxDXqCMzWWXdDcupPVmTRM4wu767vp8PuF4Z");
+mintNFT("Pinata metadata link");
 
